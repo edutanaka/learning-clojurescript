@@ -1,0 +1,2 @@
+java -cp cljs.jar:src clojure.main ./src/build.clj
+rlwrap java -cp cljs.jar:src clojure.main ./src/repl.clj
