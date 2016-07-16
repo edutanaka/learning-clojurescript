@@ -8,4 +8,10 @@
                  [weasel "0.7.0" :exclusions [org.clojure/clojurescript]]]
   :profiles {:dev {:dependencies [[com.cemerick/piggieback "0.2.1"]
                                   [org.clojure/tools.nrepl "0.2.10"]]
-                   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}})
+                   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}}
+  :plugins [[lein-cljsbuild "1.1.3"]]
+  :cljsbuild {:builds [{:source-paths ["src"]
+                        :compiler {:main piggieback-project.core
+                                   :output-to "out/main.js"
+                                   :output-dir "out"
+                                   :optimizations :none}}]})
