@@ -1,3 +1,4 @@
+/target
 /classes
 /checkouts
 pom.xml
@@ -8,7 +9,9 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+.repl*/
+*.*~
 out/
-.repl-*
-target/
-.lein*
+.cljs_node_repl/
+*.*#
+*.#*
