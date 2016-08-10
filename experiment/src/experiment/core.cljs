@@ -1,6 +1,7 @@
 (ns experiment.core
   (:require [experiment.utils :refer [adder]]
-            [experiment.consumers :as consumers]))
+            [experiment.consumers :as consumers]
+            [experiment.async]))
 
 (defn adder-multiplier
   [x y z]

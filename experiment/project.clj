@@ -10,7 +10,8 @@
                  [org.clojure/clojurescript "1.9.89"]
                  [org.clojure/core.async "0.2.385"
                   :exclusions [org.clojure/tools.reader]]
-                 [binaryage/devtools "0.7.2"]]
+                 [binaryage/devtools "0.7.2"]
+                 [cljs-ajax "0.5.3"]]
   
   :plugins [[lein-figwheel "0.5.4-7"]
             [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]]
